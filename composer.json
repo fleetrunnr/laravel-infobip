@@ -1,0 +1,33 @@
+{
+    "name": "fleetrunnr/laravel-infobip",
+    "description": "Infobip notification channel for sending SMS messages in Laravel.",
+    "keywords": ["infobip", "sms", "laravel", "php"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "FleetRunnr",
+            "homepage": "https://fleetrunnr.com"
+        },
+        {
+            "name": "Mansour Wakim",
+            "email": "mansour@fleetrunnr.com"
+        }
+    ],
+    "require": {
+        "php": ">=7",
+        "infobip/infobip-api-php-client": "^2.3",
+        "giggsey/libphonenumber-for-php": "^8.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "FleetRunnr\\Infobip\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
