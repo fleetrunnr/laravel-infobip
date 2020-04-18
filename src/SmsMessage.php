@@ -24,7 +24,7 @@ class SmsMessage
      */
     public function __construct()
     {
-        $this->sender = config('services.infobip.sender_id');
+        $this->sender = config('services.infobip.from');
         $this->content = '';
     }
 
