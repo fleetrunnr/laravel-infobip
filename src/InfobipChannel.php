@@ -36,10 +36,6 @@ class InfobipChannel
             throw CouldNotSendNotification::invalidReceiver();
         }
 
-        // Get the message recipient and sender
-        $to = $notifiable->phone;
-        $from = $message->sender;
-
         // Get the notification message
         $message = $notification->toInfobip($notifiable);
 
@@ -47,6 +43,10 @@ class InfobipChannel
         if(!$message instanceof SmsMessage) {
             throw CouldNotSendNotification::invalidMessageObject($message);
         }
+
+        // Get the message recipient and sender
+        $to = $notifiable->phone;
+        $from = $message->sender;
 
         // Build the request
         $requestBody = new SMSTextualRequest();
