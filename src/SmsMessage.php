@@ -2,7 +2,7 @@
 
 namespace FleetRunnr\Infobip;
 
-class InfobipMessage
+class SmsMessage
 {
     /**
      * The message sender.

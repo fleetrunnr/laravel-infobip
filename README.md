@@ -1,7 +1,5 @@
 # Infobip SMS notification channel for Laravel
 
-[![Software License][ico-license]](LICENSE.md)
-
 ## About
 
 The `laravel-infobip` package allows you to send SMS messages via the [Infobip](https://infobip.com) service.
@@ -17,7 +15,7 @@ If creates a new notification channel which you can utilize by calling the `toIn
 You may install this package via Composer:
 
 ```sh
-composer require fleetrunnr/laravel-infobip`
+composer require fleetrunnr/laravel-infobip
 ```
 
 ## Configuration
